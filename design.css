@@ -4,7 +4,6 @@
 
     grid-template-columns: 20px 1fr 2fr 20px;
     grid-template-rows: 1fr 0.6fr 6fr 1fr;
-
     grid-template-areas: 
     ". header header ."
     ". nav nav ."
@@ -15,7 +14,7 @@
 
 header{
     grid-area: header;
-    background-color: lightyellow;
+    background-color: var(--primary-color)
 }
 .nav{
     grid-area: nav;
@@ -32,7 +31,7 @@ header{
     overflow: hidden; 
 }
 .nav a{
-    color: lightgoldenrodyellow;
+    color: lightyellow;
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -41,7 +40,7 @@ header{
 }
 
 .nav a:hover{
-   color: orange;
+   color: var(--accent-color)
 }
 
 .nav li{
@@ -50,17 +49,18 @@ header{
 
 .sidebar{
     grid-area: sidebar;
-    background-color: blanchedalmond;
+    background-color: var(--primary-color)
 }
 
 main{
     grid-area: main;
-    background-color: lightgoldenrodyellow;
+    background-color: var(--primary-color);
+  
 }
 
 footer{
     grid-area: footer;
-    background-color: lightyellow
+    background-color: var(--primary-color)
 }
 
 @media (max-width: 700px){
@@ -81,4 +81,29 @@ footer{
    nav {
     background-color: lightsteelblue;
    }
+}
+
+:root{
+
+    --primary-color: creamwhite;
+    --secondary-color: creamwhite;
+    --accent-color: #c97936;
+    --text-color: black; 
+     
+}
+
+#startmain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+#startmain div{
+
+  width: 70%;
+}
+
+#startmain img{
+    width: 35%;
 }
