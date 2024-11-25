@@ -12,6 +12,15 @@
 
 }
 
+#grid-container-webshop{
+    grid-template-areas: 
+    ". header header ."
+    ". nav nav ."
+    ". main main ."
+    ". footer footer .";
+
+}
+
 header{
     grid-area: header;
     background-color: var(--primary-color)
@@ -52,12 +61,34 @@ header{
     background-color: var(--primary-color)
 }
 
+.sidebar img{
+    width: 58%;
+}
+
 main{
     grid-area: main;
     background-color: var(--primary-color);
   
 }
+.flex{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 
+}
+
+.flex img{
+    flex-wrap: nowrap;
+    width: 20%;
+
+}
+
+.flex div{
+    width: 39%;
+}
 footer{
     grid-area: footer;
     background-color: var(--primary-color)
@@ -94,7 +125,7 @@ footer{
 
 #startmain{
     display: flex;
-    align-items: center;
+    align-items: last baseline;
     justify-content: space-between;
     gap: 10px;
 
@@ -106,4 +137,5 @@ footer{
 
 #startmain img{
     width: 35%;
+  
 }
