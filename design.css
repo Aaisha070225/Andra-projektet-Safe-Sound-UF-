@@ -58,9 +58,9 @@ header{
 
 .sidebar{
     grid-area: sidebar;
-    background-color: var(--primary-color)
-}
+    background-color: var(--primary-color);
 
+}
 .sidebar img{
     width: 58%;
 }
@@ -138,4 +138,23 @@ footer{
 #startmain img{
     width: 35%;
   
+}
+
+.form {
+    width: 50%;
+}
+.innerform{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+.innerform label{
+    width: 30%;
+}
+.innerform input{
+    width: 50%;
+}
+.btn{
+    width: 60%;
 }
